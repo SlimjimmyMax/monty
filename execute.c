@@ -49,7 +49,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		fclose(file);
 		free(content);
 		free_stack(*stack);
-		exit(FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	return (1);
 }
